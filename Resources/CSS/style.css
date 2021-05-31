@@ -115,6 +115,42 @@ h3{
 }
 
 
+.icon-small {
+    display: inline-block;
+    font-size: 120%;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    margin-right: 10px;
+
+    /* SECRETS TO ALIGN ICON & TEXT */
+
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+
+/* ------------------------------------------------------------------------- */
+                            /* LINKS  */
+/* ------------------------------------------------------------------------- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+
+}
+
 
 
 
@@ -171,6 +207,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -315,6 +352,71 @@ header {
     padding: 5px;
 }
 
+.btn-app:link,
+.btn-app:visited{
+    border: 0px;
+}
+
 .btn-app img{
     margin-right: 10px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------- */
+                               /* CITIES  */
+/* ------------------------------------------------------------------------- */
+
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin: 15px;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+                               /* TESTIMONIALS  */
+/* ------------------------------------------------------------------------- */
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Resources/CSS/img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
